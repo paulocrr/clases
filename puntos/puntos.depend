@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1476968516 source:c:\users\alumno-a\documents\puntos\puntos\main.cpp
+	<iostream>
+	"Point.h"
+
+1476967743 c:\users\alumno-a\documents\puntos\puntos\point.h
+
+1476968183 source:c:\users\alumno-a\documents\puntos\puntos\point.cpp
+	<iostream>
+	"Point.h"
+
+1477023014 source:i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\main.cpp
+	<iostream>
+	"Point.h"
+
+1477022823 i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\point.h
+
+1477023032 source:i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\point.cpp
+	<iostream>
+	<new>
+	"Point.h"
+
