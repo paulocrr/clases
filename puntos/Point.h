@@ -27,5 +27,6 @@ public:
     void Insert(Point p, int pos);
     void Delete(int pos);
     void Clear();
+    void print_arr();
     int getSize();
 };

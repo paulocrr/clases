@@ -33,6 +33,10 @@ void Point::modify_Point(float x1, float y1){
     x+=x1;
     y+=y1;
 }
+ArrayPoint::ArrayPoint() {
+    siz=0;
+    ptr_puntos = new Point[siz];
+}
 ArrayPoint::ArrayPoint(Point points[],int tam){
     siz = tam;
     ptr_puntos = new Point[siz];
@@ -48,34 +52,67 @@ ArrayPoint::ArrayPoint(ArrayPoint &pv){
         ptr_puntos[i]=pv.ptr_puntos[i];
     }
 }
+
 void ArrayPoint::Push_back(Point p){
+    Point *temp = new Point[siz];
+    for(int i = 0; i<siz;i++){
+        temp[i]=ptr_puntos[i];
+    }
     siz+=1;
     ptr_puntos = new Point[siz];
+    for(int i = 0; i<siz-1;i++){
+        ptr_puntos[i]=temp[i];
+    }
+    delete[] temp;
     ptr_puntos[siz-1]=p;
+}
+
+void ArrayPoint::print_arr(){
+    for(int i = 0;i<siz;i++){
+        cout<<i<<": X="<<ptr_puntos[i].getX()<<" , Y="<<ptr_puntos[i].getY()<<endl;
+    }
 }
 void ArrayPoint::Insert(Point p, int pos){
     if(pos>siz){
         cout<<"La posicion no permitida";
     }else{
+        Point *temp = new Point[siz];
+        for(int i = 0; i<siz;i++){
+            temp[i]=ptr_puntos[i];
+        }
         siz+=1;
         ptr_puntos = new Point[siz];
-        for(int i = pos; i<siz;i++){
-            ptr_puntos[pos+1]=ptr_puntos[pos];
+        for(int i = 0; i<siz-1;i++){
+            ptr_puntos[i]=temp[i];
         }
+        for(int i = pos; i<siz-1;i++){
+            ptr_puntos[i+1]=temp[i];
+        }
+        delete[] temp;
         ptr_puntos[pos]=p;
     }
 }
-void ArrayPoint::Delete(int pos ){
-    for(int i =0;pos<siz;i++){
-        ptr_puntos[pos]=ptr_puntos[pos+1];
+void ArrayPoint::Delete(int pos){
+    Point *temp = new Point[siz];
+       for(int i = 0; i<siz;i++){
+            temp[i]=ptr_puntos[i];
     }
     siz-=1;
     ptr_puntos = new Point[siz];
+    for(int i =0;i<siz;i++){
+        if(i>=pos){
+             ptr_puntos[i]=temp[i+1];
+        }else{
+            ptr_puntos[i]=temp[i];
+        }
+
+    }
+    delete[] temp;
 }
 void ArrayPoint::Clear(){
     delete[] ptr_puntos;
-    //cout<<ptr_puntos[2];
     siz=0;
+    ptr_puntos = new Point[siz];
 }
 int ArrayPoint::getSize(){
     return siz;
