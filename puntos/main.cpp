@@ -1,12 +1,30 @@
 #include <iostream>
 //#include "Point.h"
-#include "Vector.h"
+//#include "Vector.h"
+#include "Polygon.h"
 using namespace std;
 
-main()
+int main()
 {
+    //Clase Vector Array
+    Point p1(1.0,2.0);
+    Point p2(1.0,2.0);
+    Point p3(3.0,6.0);
+    Point p4(3.0,6.0);
+    Rectangle r1(p1,p2);
+   // Rectangle r2(p1,p2,p3,p4);
+    r1.print_rec();
+    //r2.print_rec();
+    /*Vector vec1(p1,p2);
+    Vector vec2(p3,p4);
+    Vector vec3;
+    VectorArray vectorArray;
+    vectorArray.Push_back(vec1);
+    vectorArray.Push_back(vec2);
+    vectorArray.Insert(vec3,1);
+    vectorArray.print_arr();*/
     //Clase Vector
-    Point p1(1.2,3.4);
+    /*Point p1(1.2,3.4);
     Point p2(1.2,3.4);
     Vector v1;
     Vector v2;
@@ -15,7 +33,7 @@ main()
     v2=v1;
     v1.print_Vec();
     v2.print_Vec();
-    float m1 = v1.modulo();
+    float m1 = v1.modulo();*/
 
 
     //Clase Punto
@@ -63,4 +81,5 @@ main()
     cout<<x2<<y2<<endl;
     punto2.modify_Point(3.0,4.0);
     punto2.print_Point();*/
+    return 0;
 }

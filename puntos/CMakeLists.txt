@@ -8,6 +8,6 @@ set(SOURCE_FILES
     Point.cpp
     Point.h
     Vector.cpp
-    Vector.h)
+    Vector.h Polygon.cpp Polygon.h)
 #target_link_libraries(<math.h> m)
 add_executable(puntos ${SOURCE_FILES})

@@ -27,7 +27,7 @@ void Point::setY(float y1){
     y = y1;
 }
 void Point::print_Point(){
-    cout<<x<<y;
+    cout<<x<<","<<y<<endl;
 }
 void Point::modify_Point(float x1, float y1){
     x+=x1;
@@ -55,9 +55,7 @@ ArrayPoint::ArrayPoint(ArrayPoint &pv){
 
 void ArrayPoint::Push_back(Point p){
     Point *temp = new Point[siz];
-    for(int i = 0; i<siz;i++){
-        temp[i]=ptr_puntos[i];
-    }
+    temp = ptr_puntos;
     siz+=1;
     ptr_puntos = new Point[siz];
     for(int i = 0; i<siz-1;i++){
@@ -77,9 +75,7 @@ void ArrayPoint::Insert(Point p, int pos){
         cout<<"La posicion no permitida";
     }else{
         Point *temp = new Point[siz];
-        for(int i = 0; i<siz;i++){
-            temp[i]=ptr_puntos[i];
-        }
+        temp=ptr_puntos;
         siz+=1;
         ptr_puntos = new Point[siz];
         for(int i = 0; i<siz-1;i++){
@@ -94,9 +90,7 @@ void ArrayPoint::Insert(Point p, int pos){
 }
 void ArrayPoint::Delete(int pos){
     Point *temp = new Point[siz];
-       for(int i = 0; i<siz;i++){
-            temp[i]=ptr_puntos[i];
-    }
+    temp = ptr_puntos;
     siz-=1;
     ptr_puntos = new Point[siz];
     for(int i =0;i<siz;i++){
