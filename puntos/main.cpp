@@ -7,14 +7,20 @@ using namespace std;
 int main()
 {
     //Clase Vector Array
-    Point p1(1.0,2.0);
-    Point p2(1.0,2.0);
-    Point p3(3.0,6.0);
-    Point p4(3.0,6.0);
+    Point p1(1.0,6.0);
+    Point p2(3.0,8.0);
+    Point p3(2.0,4.0);
     Rectangle r1(p1,p2);
-   // Rectangle r2(p1,p2,p3,p4);
-    r1.print_rec();
-    //r2.print_rec();
+    Triangle t1(p1,p2,p3);
+    if(1==1){
+        Rectangle r2(p1,p2);
+        cout<<r2.getNumPolygons()<<endl;
+    }
+    cout<<r1.getNumPolygons()<<endl;
+    double res = r1.area();
+    cout<<res<<endl;
+    cout <<t1.area()<<endl;
+   // Rectangle r2(p1,p2,p3,p4);S
     /*Vector vec1(p1,p2);
     Vector vec2(p3,p4);
     Vector vec3;

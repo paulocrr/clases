@@ -13,6 +13,7 @@ public:
     void print_Point();
     void modify_Point(float x1, float y1);
 
+
 };
 
 class ArrayPoint{
@@ -29,4 +30,5 @@ public:
     void Clear();
     void print_arr();
     int getSize();
+    Point* get(int pos);
 };

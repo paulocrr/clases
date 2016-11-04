@@ -3,38 +3,26 @@
 class Polygon{
 protected:
     ArrayPoint arrp2;
-    int num=0;
+    static int num;
 public:
+    Polygon(Point a[],int tam);
     Polygon();
-    Polygon(Point a[4],int tam);
-    virtual double area();
-    int getNumPolygons();
+    ~Polygon();
+    virtual double area() = 0;
+    static int getNumPolygons(){return num;}
     int getNumSides();
     const ArrayPoint *getPoints();
 };
 
-class Rectangle:public Polygon{
-private:
-    Point p1;
-    Point p2;
-    Point p3;
-    Point p4;
+class Rectangle: public Polygon{
 public:
-    Rectangle(Point p1, Point p2);
-    Rectangle(int x,int y,int x1,int y1);
-    double area();
-    void print_rec();
+    Rectangle(Point p1,Point p2);
+    Rectangle(double x,double y, double x1, double y1);
+    virtual double area();
 };
-class Triangule:public Polygon{
-private:
-    Point p1;
-    Point p2;
-    Point p3;
+class Triangle: public Polygon{
 public:
-    Triangule();
-    Triangule(Point p1,Point p2,Point p3);
-    double Herons();
+    Triangle(Point p1,Point p2, Point p3);
+    virtual double area();
 };
-
-
 

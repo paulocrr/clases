@@ -111,4 +111,9 @@ void ArrayPoint::Clear(){
 int ArrayPoint::getSize(){
     return siz;
 }
+Point* ArrayPoint::get(int pos){
+    //if(pos>=0 && pos<siz){
+        return ptr_puntos+pos;
+    //}
+}
 

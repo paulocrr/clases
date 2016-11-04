@@ -9,13 +9,13 @@
 	<iostream>
 	"Point.h"
 
-1477023014 source:i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\main.cpp
+1478235829 source:i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\main.cpp
 	<iostream>
-	"Point.h"
+	"Polygon.h"
 
-1477022823 i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\point.h
+1478231836 i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\point.h
 
-1477023032 source:i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\point.cpp
+1478233887 source:i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\point.cpp
 	<iostream>
 	<new>
 	"Point.h"
@@ -29,5 +29,21 @@
 1477532024 source:/media/paulo/Datos/Mis Docs/UCSP/Ciencias de la Computacion I/clases/puntos/Point.cpp
 	<iostream>
 	<new>
+	"Point.h"
+
+1478235497 i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\polygon.h
+	"Point.h"
+
+1478235851 source:i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\polygon.cpp
+	<math.h>
+	"Polygon.h"
+
+1478224568 source:i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\vector.cpp
+	<iostream>
+	<new>
+	<math.h>
+	"Vector.h"
+
+1478224568 i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\vector.h
 	"Point.h"
 
