@@ -9,9 +9,10 @@
 	<iostream>
 	"Point.h"
 
-1478235829 source:i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\main.cpp
+1478838519 source:i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\main.cpp
 	<iostream>
 	"Polygon.h"
+	<typeinfo>
 
 1478231836 i:\trabajos ucsp\semestre ii\ciencias de la computacion i\clases\clases\puntos\point.h
 
